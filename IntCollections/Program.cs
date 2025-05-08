@@ -14,7 +14,29 @@ namespace IntCollections
             Queue<int> queueNumbers = new Queue<int> ();
             HashSet<int> hashSetNumbers = new HashSet<int> ();
 
+            foreach (int num in numbers)
+            {
+                listNumbers.Add(num);
+            }
+            Console.WriteLine($"List: {string.Join(", ", listNumbers)}");
+
+            foreach (int num in numbers)
+            {
+                stackNumbers.Push(num);
+            }
+            Console.WriteLine($"Stack: {string.Join(", ", stackNumbers)}");
             
+            foreach (int num in numbers)
+            {
+                queueNumbers.Enqueue(num);
+            }
+            Console.WriteLine($"Queue: {string.Join(", ", queueNumbers)}");
+            
+            foreach (int num in numbers)
+            {
+                hashSetNumbers.Add(num);
+            }
+            Console.WriteLine($"HashSet: {string.Join(", ", hashSetNumbers)}");
        }
     }
 }
