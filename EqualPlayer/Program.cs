@@ -7,6 +7,8 @@ namespace EqualPlayer
     {
         private static void Main(string[] args)
         {
+            HashSet<Player> setOfPlayers = new HashSet<Player> ();
+
             
         }
     }
